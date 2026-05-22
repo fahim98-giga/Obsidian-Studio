@@ -1,53 +1,101 @@
 import { ShowcaseProject } from "./types";
 
-import techLogoImg from "./assets/images/tech_logo_design_1779474790560.png";
-import luxuryBrandImg from "./assets/images/luxury_brand_design_1779474811425.png";
-import futuristicLogoImg from "./assets/images/futuristic_logo_3d_1779474833462.png";
+import neotechLogoImg from "./assets/images/neotech_logo_1779475763524.png";
+import obsidianLuxeImg from "./assets/images/obsidian_luxe_1779475781396.png";
+import quantumLogoImg from "./assets/images/quantum_logo_1779475797354.png";
+import finovaAppImg from "./assets/images/finova_app_1779475814944.png";
+import pulseGamingImg from "./assets/images/pulse_gaming_1779475830244.png";
+import arcadiaBrandImg from "./assets/images/arcadia_brand_1779475848351.png";
 
 export const SHOWCASE_PROJECTS: ShowcaseProject[] = [
   {
-    id: "minimal-tech-logo",
-    title: "Minimal Tech Logo Design",
+    id: "neotech-logo",
+    title: "NeoTech Minimal Logo",
     category: "Logo Design",
-    description: "An absolute flat minimalist tech logo design study, incorporating sharp geometric fine lines on a pure dark, obsidian-like background. Crafted for robust responsiveness at extreme scales.",
-    image: techLogoImg,
-    highlights: ["Flat Vector Structure", "High-Contrast Balance", "Cybernetic Aesthetics"],
+    description: "A modern minimal logo designed for a futuristic tech startup. The goal was to create a simple yet powerful identity that represents innovation, speed, and digital growth with a hidden 'N' symbol.",
+    image: neotechLogoImg,
+    highlights: ["Clean Geometric Shape", "Hidden 'N' Abstract Form", "Modern Flat Tech Style"],
     colorPalette: [
-      { name: "Polar White", hex: "#FFFFFF" },
-      { name: "Deep Charcoal", hex: "#121216" },
-      { name: "Cyber Gray", hex: "#262630" }
+      { name: "Neon Blue Accent", hex: "#22D3EE" },
+      { name: "Absolute Black", hex: "#000000" },
+      { name: "Cyber Charcoal", hex: "#111115" }
     ],
-    originalPrompt: "Luxury flat minimalist tech logo design, white abstract geometric cyber symbol on absolute dark background, fine lines, sharp edges, modern tech company branding, high resolution 3D visual render concept, studio lighting",
-    canvaPrompt: "Sleek, flat geometric technical icon representing a modular cyber node. Styled with high-contrast, clean lines, and perfectly balanced negative space over a solid dark background."
+    originalPrompt: "Futuristic flat minimalist tech company logo design, abstract geometric symbol depicting a hidden letter N, bold neon blue cyber accent color, solid deep black background, extreme high contrast, clean vectors, sharp lines, ultra high resolution visual art mockup, 4:3 aspect ratio",
+    canvaPrompt: "Geometric futuristic corporate logo. Modern solid deep indigo icon embedding a stylized speed-oriented letter N vector with glowing neon cyan keylines."
   },
   {
-    id: "luxury-brand-identity",
-    title: "Luxury Brand Identity Design",
-    category: "Brand Identity Design",
-    description: "Sophisticated corporate presentation for elite high-fashion and styling. Features luxury black card overlays with metallic gold elegant serif lettering, set upon an organic slate background.",
-    image: luxuryBrandImg,
-    highlights: ["Metallic Gold Foil Accents", "Serif Typography Pairing", "Premium Material Textures"],
+    id: "obsidian-luxe",
+    title: "Obsidian Luxe Branding",
+    category: "Brand Identity",
+    description: "A premium brand identity system designed for a luxury fashion label. Focused on elegance, luxury, simplicity, and high-end visual appeal with premium corporate business card overlays.",
+    image: obsidianLuxeImg,
+    highlights: ["Premium Logo Design", "Business Card Mockup", "Cohesive Typography System"],
     colorPalette: [
+      { name: "Champagne Gold", hex: "#D4AF37" },
       { name: "Obsidian Black", hex: "#08080C" },
-      { name: "Champagne Gold", hex: "#E2C384" },
-      { name: "Brushed Slate", hex: "#23232C" }
+      { name: "Pristine White", hex: "#FFFFFF" }
     ],
-    originalPrompt: "Minimalist luxury fashion brand identity design showcase. Premium black card overlay with gold elegant sophisticated serif typeface logo. Refined stone textures, corporate visual branding mock-up on sleek minimalist dark obsidian surface, studio lighting",
-    canvaPrompt: "Elegant corporate luxury styling card layout. Coarse black slate surface with brushed gold-foil typeface details and fine gold thin margins."
+    originalPrompt: "Premium high-end corporate mockup for luxury fashion label Obsidian Luxe. Sleek black business card design flat overlay on stone table, with champagne metallic gold foil serif typography. Deep charcoal gray and soft white details. Centered, expensive editorial aesthetic, studio lighting, flat lay composition, 4:3 aspect ratio",
+    canvaPrompt: "Sophisticated luxury corporate cards side-by-side layout, black leather background textures accented with clean modern gold foil line separators and sleek serif typographic system."
   },
   {
-    id: "3d-futuristic-logo",
-    title: "3D Futuristic Logo Concept",
-    category: "3D Logo Visualization",
-    description: "An experimental crystal structure refracting neon purple and deep electric blue spectrums. Designed as a concept centerpiece for high-end digital agency models and Web3 platforms.",
-    image: futuristicLogoImg,
-    highlights: ["Holographic Glass Refraction", "Neon Ambient Radiance", "Octane Organic Materials"],
+    id: "quantum-logo",
+    title: "Quantum 3D Logo Visualization",
+    category: "3D Visual Concept",
+    description: "A futuristic 3D metallic logo concept designed for a digital agency. Features an intricate metallic structure floating in deep spatial air with elegant soft ambient glow effects.",
+    image: quantumLogoImg,
+    highlights: ["3D Metallic Surface", "Purple Neon Glimmer", "Floating Gravity Feel"],
     colorPalette: [
-      { name: "Void Violet", hex: "#1A0F2E" },
-      { name: "Neon Blue", hex: "#3B82F6" },
-      { name: "Obsidian Core", hex: "#030305" }
+      { name: "Neon Purple Glow", hex: "#A855F7" },
+      { name: "Metallic Titanium", hex: "#71717A" },
+      { name: "Cosmic Dark Space", hex: "#09090B" }
     ],
-    originalPrompt: "Beautiful 3D futuristic crystal logo concept, glowing neon purple obsidian sculpture with holographic blue glass refraction, floating in empty dark cosmic space with absolute black background, photorealistic octane render, high detailed",
-    canvaPrompt: "Neon purple and electric cyan 3D glowing cluster, abstract crystalline orb floating centered in a dark spatial atmosphere, polished glass refraction look."
+    originalPrompt: "Experimental futuristic 3D metallic logo floating in dark dark cosmic empty space, glowing soft neon purple ambient light, high tech metallic titanium texture, octane rendering style, geometric crystalline structure, studio lighting, 4:3 aspect ratio",
+    canvaPrompt: "Polished futuristic abstract render showcasing an interconnected spatial chrome sphere cluster casting rich warm violet and violet glow reflections against clean pitch dark backdrop."
+  },
+  {
+    id: "finova-app",
+    title: "Finova Mobile App Identity",
+    category: "Fintech Startup Identity",
+    description: "A clean and modern brand identity designed for a mobile finance app. Focused on conveying digital trust, simplicity, and security through visual elements, beautiful gradients, and sleek mockups.",
+    image: finovaAppImg,
+    highlights: ["Custom Fintech App Logo", "Vibrant UI Gradient Style", "Minimal Interface Graphic Mockup"],
+    colorPalette: [
+      { name: "Fintech Gradient Blue", hex: "#3B82F6" },
+      { name: "Pristine Snow White", hex: "#FAFAFA" },
+      { name: "Digital Teal Security", hex: "#14B8A6" }
+    ],
+    originalPrompt: "Modern clean fintech mobile app brand identity mockup showing a polished clean white and soft blue gradient interface on a black phone mockup, with minimalist app logo and trusted digital security graphic icon, vector elements, elegant shadow, 4:3 aspect ratio",
+    canvaPrompt: "Clean dual-tone screen interface template incorporating a geometric corporate finance coin monogram in dynamic royal blue gradient on pure white canvas."
+  },
+  {
+    id: "pulse-gaming",
+    title: "Pulse Esports Identity",
+    category: "Gaming & Esports Logo",
+    description: "A bold and aggressive logo and visual system designed for a competitive gaming team. Employs energetic sharp typography, abstract heartbeat waves, and an intense red neon aesthetic.",
+    image: pulseGamingImg,
+    highlights: ["Aggressive Sharp Typography", "Abstract Heartbeat Wave", "Dynamic Speed Motion feel"],
+    colorPalette: [
+      { name: "Aggressive Red Neon", hex: "#EF4444" },
+      { name: "Deep Matte Black", hex: "#0A0A0A" },
+      { name: "Electric Ember Gray", hex: "#27272A" }
+    ],
+    originalPrompt: "Bold and aggressive esports gaming team logo design. Sharp stylized typography with abstract neon red glowing pulse wave heart rate shape, energy and speed lines on dark textured black grunge background, cinematic dynamic motion feel, gaming banner, 4:3 aspect ratio",
+    canvaPrompt: "Sharp tribal esports brand layout features a powerful scarlet vector graphic of a heartbeat pulse speed icon, styled with sharp angles on a high-contrast dark space background."
+  },
+  {
+    id: "arcadia-brand",
+    title: "Arcadia Architecture Studio",
+    category: "Architecture Studio Branding",
+    description: "A minimal and sophisticated brand identity solution tailored for Arcadia Architecture Studio. Revolves around modular geometric structure, high-end balance, and clean typography layouts.",
+    image: arcadiaBrandImg,
+    highlights: ["Letterhead Design Brief", "Premium Business Card Mockup", "Structural Balance System"],
+    colorPalette: [
+      { name: "Architectural Beige", hex: "#F5F5DC" },
+      { name: "Jet Slate Black", hex: "#18181B" },
+      { name: "Concrete Soft Gray", hex: "#E4E4E7" }
+    ],
+    originalPrompt: "Extremely minimal sophisticated corporate brand presentation for high-end architecture studio. Business card and structural letterhead layout. Calm elegant beige, jet black, and soft concrete gray color palette. Clean geometry, architectural blueprints background, premium luxury texture, studio photorealistic flat-lay, 4:3 aspect ratio",
+    canvaPrompt: "Modern minimalist layout for an architect monograph. Sleek sandstone textured background with structured matte-black geometrical frame and subtle ivory geometric line illustration."
   }
 ];
