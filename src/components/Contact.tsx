@@ -50,7 +50,7 @@ export default function Contact() {
               <h2 className="font-display text-4xl sm:text-5xl font-black uppercase italic text-white tracking-tight">
                 Secure <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">Obsidian</span>
               </h2>
-              <p className="font-sans text-sm text-gray-450 leading-relaxed font-light">
+              <p className="font-sans text-sm text-gray-400 leading-relaxed font-light">
                 Let's collaborate on your logo, visual branding guidelines, or high-fidelity 3D brand assets. We usually respond to inquiries within 24 working hours.
               </p>
             </div>
@@ -93,7 +93,7 @@ export default function Contact() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {/* Name */}
                     <div className="space-y-1.5">
-                      <label className="block text-[10px] font-mono uppercase text-gray-550 tracking-wider">Your Name</label>
+                      <label className="block text-[10px] font-mono uppercase text-gray-500 tracking-wider">Your Name</label>
                       <input
                         type="text"
                         placeholder="e.g. Liam Sterling"
@@ -106,7 +106,7 @@ export default function Contact() {
 
                     {/* Email */}
                     <div className="space-y-1.5">
-                      <label className="block text-[10px] font-mono uppercase text-gray-550 tracking-wider">Email Address</label>
+                      <label className="block text-[10px] font-mono uppercase text-gray-500 tracking-wider">Email Address</label>
                       <input
                         type="email"
                         placeholder="liam@domain.com"
@@ -120,7 +120,7 @@ export default function Contact() {
 
                   {/* Service selector */}
                   <div className="space-y-1.5">
-                    <label className="block text-[10px] font-mono uppercase text-gray-550 tracking-wider">Required Capability</label>
+                    <label className="block text-[10px] font-mono uppercase text-gray-500 tracking-wider">Required Capability</label>
                     <select
                       value={formData.service}
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
@@ -136,7 +136,7 @@ export default function Contact() {
 
                   {/* Descriptions */}
                   <div className="space-y-1.5">
-                    <label className="block text-[10px] font-mono uppercase text-gray-550 tracking-wider">Design Brief Parameters</label>
+                    <label className="block text-[10px] font-mono uppercase text-gray-500 tracking-wider">Design Brief Parameters</label>
                     <textarea
                       placeholder="Outline any project constraints, visual materials, key timelines, etc..."
                       rows={4}
@@ -177,7 +177,7 @@ export default function Contact() {
 
                   <button
                     onClick={handleReset}
-                    className="flex items-center gap-2 bg-black border border-white/10 text-xs font-mono text-cyan-400 hover:border-cyan-550 px-5 py-2.5 rounded-xl active:scale-95 transition-all uppercase cursor-pointer hover:text-white"
+                    className="flex items-center gap-2 bg-black border border-white/10 text-xs font-mono text-cyan-400 hover:border-cyan-500 px-5 py-2.5 rounded-xl active:scale-95 transition-all uppercase cursor-pointer hover:text-white"
                   >
                     <span>Draft Another Brief</span>
                     <ArrowRight className="w-3 px-0 inline scroll-smooth" />

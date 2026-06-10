@@ -119,10 +119,10 @@ ${brief.designDirectives.map((d, i) => `${i+1}. ${d}`).join("\n")}
             <span>05 // INTERACTIVE LABORATORY</span>
           </div>
           <h2 className="font-display text-3xl sm:text-5xl font-black uppercase italic text-white tracking-tight flex items-center">
-            AI Prompt & <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-505 ml-2">Brand Engine</span>
+            AI Prompt & <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 ml-2">Brand Engine</span>
             <span className="ml-4 h-[1px] w-16 sm:w-24 bg-cyan-500/20"></span>
           </h2>
-          <p className="font-sans text-sm text-gray-455 max-w-xl mt-3 font-light leading-relaxed">
+          <p className="font-sans text-sm text-gray-400 max-w-xl mt-3 font-light leading-relaxed">
             Need design direction for your own project? Input your brand name and style choices, and our custom Obsidian AI node will compile a complete aesthetic concept and high-quality prompt set.
           </p>
         </div>
@@ -241,7 +241,7 @@ ${brief.designDirectives.map((d, i) => `${i+1}. ${d}`).join("\n")}
                   exit={{ opacity: 0 }}
                   className="h-full border border-dashed border-white/15 rounded-2xl flex flex-col items-center justify-center p-8 text-center min-h-[350px]"
                 >
-                  <Lightbulb className="w-12 h-12 text-zinc-750 mb-4" />
+                  <Lightbulb className="w-12 h-12 text-zinc-700 mb-4" />
                   <h4 className="font-display text-base font-semibold text-slate-400">Tactical Blueprint Screen</h4>
                   <p className="font-sans text-xs text-slate-500 max-w-sm mt-1.5 font-light leading-relaxed">
                     Input your brand parameters on the left controls. Once requested, the customized briefing summary, hex palettes, and copies of high-quality Canva templates will render here.
@@ -263,7 +263,7 @@ ${brief.designDirectives.map((d, i) => `${i+1}. ${d}`).join("\n")}
                   </div>
                   
                   <div className="space-y-1.5">
-                    <h4 className="font-mono text-xs text-cyan-450 uppercase tracking-widest font-semibold">Running Gemini Brand Core...</h4>
+                    <h4 className="font-mono text-xs text-cyan-400 uppercase tracking-widest font-semibold">Running Gemini Brand Core...</h4>
                     <p className="font-sans text-xs text-gray-500 max-w-xs font-light">
                       Orchestrating geometric alignments, resolving typography pairing protocols, and outputting bespoke graphics prompts.
                     </p>
@@ -305,9 +305,18 @@ ${brief.designDirectives.map((d, i) => `${i+1}. ${d}`).join("\n")}
                   {/* Brief Header details */}
                   <div className="flex flex-col sm:flex-row justify-between items-start gap-4 pb-6 border-b border-white/5">
                     <div>
-                      <span className="font-mono text-[9px] text-cyan-400 uppercase tracking-widest bg-cyan-500/10 border border-cyan-500/15 px-2 py-0.5 rounded-md font-bold">
-                        Compiled Identity Brief
-                      </span>
+                      <div className="flex flex-wrap gap-2">
+                        <span className="font-mono text-[9px] text-cyan-400 uppercase tracking-widest bg-cyan-500/10 border border-cyan-500/15 px-2 py-0.5 rounded-md font-bold animate-pulse">
+                          Compiled Identity Brief
+                        </span>
+                        <span className={`font-mono text-[9px] uppercase tracking-widest px-2 py-0.5 rounded-md font-bold ${
+                          brief.isSimulated 
+                            ? "text-amber-400 bg-amber-500/10 border border-amber-400/20" 
+                            : "text-emerald-400 bg-emerald-500/10 border border-emerald-400/20"
+                        }`}>
+                          {brief.isSimulated ? "Strategic Presets Node (Offline Backup)" : "Gemini Generative Node (Online Live)"}
+                        </span>
+                      </div>
                       <h3 className="font-display text-2xl font-bold text-white mt-3 leading-tight">
                         {brief.conceptTitle}
                       </h3>
@@ -328,7 +337,7 @@ ${brief.designDirectives.map((d, i) => `${i+1}. ${d}`).join("\n")}
                         </>
                       ) : (
                         <>
-                          <Download className="w-3.5 h-3.5 text-cyan-455" />
+                          <Download className="w-3.5 h-3.5 text-cyan-400" />
                           <span>Download Brief</span>
                         </>
                       )}
@@ -434,7 +443,7 @@ ${brief.designDirectives.map((d, i) => `${i+1}. ${d}`).join("\n")}
                     <h4 className="font-mono text-xs uppercase text-gray-500 tracking-wider">Aesthetic Implementation directives</h4>
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {brief.designDirectives.map((d) => (
-                        <li key={d} className="flex items-start gap-2.5 text-xs text-slate-355 font-sans font-light">
+                        <li key={d} className="flex items-start gap-2.5 text-xs text-slate-300 font-sans font-light">
                           <CheckCircle2 className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />
                           <span>{d}</span>
                         </li>

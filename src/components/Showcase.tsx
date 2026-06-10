@@ -34,7 +34,7 @@ export default function Showcase() {
             Creative <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 ml-2">Studio Showcase</span>
             <span className="ml-4 h-[1px] w-16 sm:w-24 bg-cyan-500/20"></span>
           </h2>
-          <p className="font-sans text-sm text-gray-450 max-w-lg mt-3 font-light leading-relaxed">
+          <p className="font-sans text-sm text-gray-400 max-w-lg mt-3 font-light leading-relaxed">
             Each project consists of high-end graphical prototypes and corresponding custom-curated AI text prompt blueprints.
           </p>
         </div>
@@ -78,7 +78,7 @@ export default function Showcase() {
                 <h3 className="font-sans text-lg font-bold text-slate-100 tracking-wide mt-1 group-hover:text-cyan-300 transition-colors">
                   {project.title}
                 </h3>
-                <p className="font-sans text-xs text-gray-450 line-clamp-2 mt-2 font-light leading-relaxed">
+                <p className="font-sans text-xs text-gray-400 line-clamp-2 mt-2 font-light leading-relaxed">
                   {project.description}
                 </p>
 

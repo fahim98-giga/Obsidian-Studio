@@ -50,7 +50,7 @@ export default function Skills() {
         {/* Header Block */}
         <div className="flex flex-col mb-16">
           <div className="flex items-center gap-2 mb-2 font-mono text-xs uppercase tracking-widest text-[#22d3ee]">
-            <Cpu className="w-3.5 h-3.5 text-cyan-450" />
+            <Cpu className="w-3.5 h-3.5 text-cyan-400" />
             <span>03 // PROFICIENCIES</span>
           </div>
           <h2 className="font-display text-3xl sm:text-5xl font-black uppercase italic text-white tracking-tight flex items-center">
